@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->nullable();
             $table->string('rec_address')->nullable();
             $table->string('phone')->nullable();
+            // $table->string('payment_status')->default('cash on delivery');
             $table->string('status')->default('in progress');
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('book_id');
